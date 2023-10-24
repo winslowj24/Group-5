@@ -3,16 +3,16 @@
 using namespace std;
 
 int main() {
-    // Open file
+    // Open file -- FIX BUG: OPEN FILE
     
     file.open("numbers.html");
     // Adding HTML to file
     file << "<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n";
     file << "<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n";
 
-    // Add table to file line by line
+    // Add table to file line by line -- FIX BUG: DEFINE i TYPE (int i)
     for (i = 1; i <= 50; i++) {
-        // If i is even, put i in first cell
+        // If i is even, put i in first cell -- FIX BUG: DOUBLE EQUALS (==)
         if (i % 2 = 0) {
             file << "<tr><td>" << i << "</td><td></td></tr>\n";
         }
