@@ -8,14 +8,14 @@ int main()
     // Create a string containing date
     std::string date_str = "2022-03-17 10:45:30";
 
-    // Create structure containing date and time elements
-    std::tm date_obj;
+    // Create structure containing date and time elements, BUG FIXED: did not set an empty list
+    std::tm date_obj = {};
 
     // Create input string called ss containing the date time string
     std::istringstream ss(date_str);
 
-    // Input the time from the reference pointing to the date time object and input it into ss
-    ss >> std::get_time(&date_obj, "%Y-m-%d %H:%M:%S");
+    // Input the time from the reference pointing to the date time object and input it into ss, BUG FIXED: modulus in front of m was missing
+    ss >> std::get_time(&date_obj, "%Y-%m-%d %H:%M:%S");
 
     // Create a string stream called formatted_date_ss
     std::stringstream formatted_date_ss;
@@ -26,8 +26,8 @@ int main()
     // Convert string stream object to a string
     std::string formatted_date = formatted_date_ss.str();
 
-    // Print the string containing formatted date
-    std::cout << formattedDate << std::endl;
+    // Print the string containing formatted date, BUG FIXED: incorrect variable name 
+    std::cout << formatte_date << std::endl;
 
     return 0;
 }
