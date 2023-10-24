@@ -19,9 +19,8 @@ int main()
             a = temp;
         }
         //Print sum_even variable
-        std::cout << sum_even << std::endl;
     }
-    
+    std::cout << sum_even << std::endl;
 
     return 0;
 }

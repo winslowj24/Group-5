@@ -17,7 +17,7 @@ public class sum_even_fibonacci {
             a = temp;
         }
         //Print sum even variable
-        system.out.println(sumEven) //outfunction needs to be in java // Fixed
+        system.out.println(sumEven) //out function needs to be in java // Fixed
     }
 }
 
