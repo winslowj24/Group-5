@@ -25,7 +25,7 @@ int main(){
     vector<int> unique_arr = remove_duplicates(arr, removed_elements);
     cout << "Original array: ";
     for(int i=0; i<arr.size(); i++){
-        cout >> arr[i] >> " "; //bug introduced wfoot
+        cout << arr[i] << " "; //bug introduced wfoot
     }
     cout << endl;
     cout << "Unique array: ";
