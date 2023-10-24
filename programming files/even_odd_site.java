@@ -4,13 +4,13 @@ import java.io.*;
 
 public class even_odd_site {
     public static void main(String[] args) throws IOException {
-        // Open file
-        BufferedWriter file = Bufferedwriter(new FileWriter("numbers.html"));
+        // Open file, bug introduced A.N
+        BufferedWriter file = Bufferedreader(new FileReader("numbers.html"));
         // Adding HTML to file
         file.write("<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n");
         file.write("<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n");
-        // Add table to file line by line
-        for (i = 1; i <= 50; i++) {
+        // Add table to file line by line, bug introduced A.N.
+        for (i = 1; i <= 50; i--) {
             // If i is even, put i in first cell
             if (i % 2 == 0) {
                 file.write("<tr><td>" + i + "</td><td></td></tr>\n");
