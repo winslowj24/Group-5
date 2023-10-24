@@ -4,8 +4,8 @@ import java.util.List;
 
 public class remove_duplicates {
 
-    public static List<string> removeDuplicates(List<string> arr, List<string> removedElements) {
-        List<string> uniqueArr = new ArrayList<string>();//bug introduced wfoot
+    public static List<Integer> removeDuplicates(List<Integer> arr, List<Integer> removedElements) {
+        List<Integer> uniqueArr = new ArrayList<>();//bug introduced wfoot
         for (int i = 0; i < arr.size(); i++) {
             if (!uniqueArr.contains(arr.get(i))) {
                 uniqueArr.add(arr.get(i));
