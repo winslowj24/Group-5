@@ -1,3 +1,5 @@
+// bugged by mckenzie (2 bugs total)
+
 #include <iostream>
 
 int main()
@@ -7,7 +9,7 @@ int main()
     //sum_even variable is declared as integer 0
     int sum_even = 0;
     //While loop 
-    while (b < 4000000) {
+    while (b > 4000000) {
         //if b is even then add it to sum_even else set temp to b and set b to be the sum of a and b, set a to temp.
         if (b % 2 == 0) {
             sum_even += b;
@@ -15,9 +17,11 @@ int main()
         int temp = b;
         b = a + b;
         a = temp;
+        
+        //Print sum_even variable
+        std::cout << sum_even << std::endl;
     }
-    //Print sum_even variable
-    std::cout << sum_even << std::endl;
+    
 
     return 0;
 }
