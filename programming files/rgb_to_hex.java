@@ -1,3 +1,6 @@
+// Public class rgb_to_hex takes in arguments to switch rgb to hexadecimal values in the string hexColor, calls a static string
+// function for a formatting string of integers
+
 public class rgb_to_hex {
     public static void main(String[] args) {
         int r = 255;
