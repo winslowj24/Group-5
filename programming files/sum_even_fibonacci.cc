@@ -1,4 +1,4 @@
-// bugged by mckenzie (2 bugs)
+// bugged by mckenzie (2 bugs total)
 
 #include <iostream>
 
