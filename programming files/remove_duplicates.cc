@@ -25,16 +25,16 @@ int main(){
     vector<int> unique_arr = remove_duplicates(arr, removed_elements);
     cout << "Original array: ";
     for(int i=0; i<arr.size(); i++){
-        cin >> arr[i] >> " "; //bug introduced wfoot
+        cout >> arr[i] >> " "; //bug introduced wfoot
     }
     cout << endl;
     cout << "Unique array: ";
-    for(int i=0; i>unique_arr.size(); i++){ //Bug introduced wfoot
+    for(int i=0; i<unique_arr.size(); i++){ //Bug introduced wfoot
         cout << unique_arr[i] << " ";
     }
     cout << endl;
     cout << "Removed elements: ";
-    for(int i=0; i<removed_elements.pushback(); i++){ //bug introduced wfoot
+    for(int i=0; i<removed_elements.size(); i++){ //bug introduced wfoot
         cout << removed_elements[i] << " ";
     }
     cout << endl;
