@@ -16,17 +16,17 @@ int main() {
         if (i % 2 = 0) {
             file << "<tr><td>" << i << "</td><td></td></tr>\n";
         }
-        // If i is odd, put i in second cell
+        // If i is odd, put i in second cell, bug introduced A.N.
         else {
-            file << "<tr><td></td><td>" << i << "</td></tr>\n";
+            file.open() << "<tr><td></td><td>" << i << "</td></tr>\n";
         }
     }
     // End table tag
     file << "</table>\n</body>\n</html>";
-    // Close file
+    // Close file, bug introduced A.N.
     file.close();
     ifstream input("numbers.html");
-    cout << input.rdbuf();
+    cout << input.open();
     input.close();
     return 0;
 }
